@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
-import { testGPT } from '@/app/api/openai-test'
+// import { testGPT } from '@/app/api/openai-test'
 
 export default function Home() {
   useEffect(() => {
-    testGPT()
+    // testGPT()
   }, [])
   return <main>test</main>
 }
