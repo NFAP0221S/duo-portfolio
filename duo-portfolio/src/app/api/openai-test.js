@@ -3,7 +3,8 @@ import OpenAI from 'openai'
 
 const openai = new OpenAI({
   apiKey: process.env.NEXT_PUBLIC_PRIVATE_KEY,
-  dangerouslyAllowBrowser: true,
+  // 브라우저 환경에서 openai api 실행은 위험, 테스트시에만 true
+  // dangerouslyAllowBrowser: true,
 })
 
 export async function testGPT() {
